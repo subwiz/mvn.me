@@ -1,0 +1,8 @@
+<figure>
+  <video controls playsinline preload="metadata"{% if include.poster %} poster="{{ include.poster | escape }}"{% endif %} aria-label="{{ include.title | default: 'Video' | escape }}">
+    <source src="{{ include.src | escape }}" type="{{ include.type | default: 'video/mp4' | escape }}">
+    {% if include.captions %}<track kind="captions" src="{{ include.captions | escape }}" srclang="{{ include.lang | default: 'en' | escape }}" label="{{ include.language | default: 'English' | escape }}" default>{% endif %}
+    <a href="{{ include.src | escape }}">Download the video</a>.
+  </video>
+  {% if include.caption %}<figcaption>{{ include.caption | escape }}</figcaption>{% endif %}
+</figure>

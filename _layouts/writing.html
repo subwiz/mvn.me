@@ -1,0 +1,15 @@
+---
+layout: base
+---
+<article>
+  <header class="article-header">
+    <a href="{{ '/writings/' | relative_url }}">← All writings</a>
+    {% if page.published == false %}<p class="draft-label">Draft · Not published</p>{% endif %}
+    <h1>{{ page.title | escape }}</h1>
+    <p class="metadata">{{ page.author | escape }} · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time></p>
+    {% if page.description %}<p class="description">{{ page.description | escape }}</p>{% endif %}
+    {% if page.tags.size > 0 %}<ul class="tags" aria-label="Topics">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+    {% if page.cover %}<img class="cover" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | escape }}" fetchpriority="high">{% endif %}
+  </header>
+  <div class="article-body">{{ content }}</div>
+</article>

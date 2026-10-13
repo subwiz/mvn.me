@@ -1,0 +1,21 @@
+title: Subhash Chandran
+url: https://mvn.me
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+defaults:
+  - scope:
+      path: writings
+      type: pages
+    values:
+      layout: writing
+      writing: true
+      author: Subhash Chandran
+exclude:
+  - README.md
+  - tests
+  - .omx
+  - .codex
+  - .agents

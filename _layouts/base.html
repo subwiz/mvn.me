@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/writings/assets/style.css' | relative_url }}">
+  <meta property="og:type" content="{% if page.writing %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.description %}<meta property="og:description" content="{{ page.description | escape }}">{% endif %}
+  {% if page.cover %}
+  <meta property="og:image" content="{{ page.cover | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.cover_alt | escape }}">
+  {% endif %}
+</head>
+<body>
+  <nav class="navigation" aria-label="Main navigation">
+    <a class="site-name" href="{{ '/' | relative_url }}">Subhash Chandran</a>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/writings/' | relative_url }}" aria-current="{% if page.writing %}false{% else %}page{% endif %}">Writings</a>
+    <a href="mailto:sc@mvn.me">Email Me</a>
+  </nav>
+  <main id="main-content">{{ content }}</main>
+</body>
+</html>

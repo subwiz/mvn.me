@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,6 +67,30 @@
             line-height: 1.6;
         }
 
+        .recent-writings {
+            margin-top: 32px;
+        }
+
+        .recent-writings h2 {
+            margin-bottom: 16px;
+            font-size: 1.3em;
+        }
+
+        .recent-writings ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .recent-writings li {
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .recent-writings time {
+            display: block;
+            font-size: 0.85em;
+        }
+
         /* Light mode (default) */
         .light-mode {
             background-color: #ffffff;
@@ -104,6 +130,7 @@
         <p><br/></p>
         <h2>Find Me</h2>
         <ul>
+            <li><a href="/writings/">Writings</a></li>
             <li><a href="mailto:sc@mvn.me">Email Me</a></li>
             <li><a href="https://knowledged.to">Knowledged Notes</a></li>
             <li><a href="https://github.com/wiztools/">GitHub</a></li>
@@ -125,6 +152,24 @@
         <p>I enjoy coding and have made some contributions to open source projects at <a href="https://www.wiztools.org/">WizTools.org</a>.</p>
 
         <p>The easiest way to reach me is via email, sc@mvn.me. I answer all emails by myself. Any other mode of communication doesn't guarantee my response ;-)</p>
+
+        {% assign recent_articles = site.pages | where: 'writing', true | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
+        <section class="recent-writings" aria-labelledby="recent-writings-heading">
+            <h2 id="recent-writings-heading">Recent writings</h2>
+            {% if recent_articles.size > 0 %}
+            <ul>
+                {% for article in recent_articles limit: 3 %}
+                <li>
+                    <a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a>
+                    <time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%B %-d, %Y' }}</time>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>Articles are on their way. Check back soon.</p>
+            {% endif %}
+            <p><a href="{{ '/writings/' | relative_url }}">View all writings →</a></p>
+        </section>
     </main>
 
     <script>

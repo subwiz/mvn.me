@@ -1,0 +1,27 @@
+---
+layout: base
+writing: false
+title: Writings
+description: Articles and notes by Subhash Chandran.
+permalink: /writings/
+---
+<header>
+  <h1>Writings</h1>
+  <p class="description">Articles, ideas, and things I’m working on.</p>
+</header>
+{% assign articles = site.pages | where: 'writing', true | sort: 'date' | reverse %}
+<div class="writing-list">
+{% for article in articles %}
+  <article class="writing-card">
+    {% if article.cover %}<a class="card-cover" href="{{ article.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ article.cover | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+    <div>
+      <p class="metadata"><time datetime="{{ article.date | date: '%Y-%m-%d' }}">{{ article.date | date: '%B %-d, %Y' }}</time>{% if article.published == false %} · Draft{% endif %}</p>
+      <h2><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h2>
+      <p>{{ article.description | escape }}</p>
+      {% if article.tags.size > 0 %}<ul class="tags" aria-label="Topics">{% for tag in article.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+  </article>
+{% else %}
+  <p>Articles are on their way. Check back soon.</p>
+{% endfor %}
+</div>
