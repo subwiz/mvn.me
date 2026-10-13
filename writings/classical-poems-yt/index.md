@@ -42,9 +42,9 @@ asked someone to find the book and open it. A video could reach someone who
 had never gone looking for poetry at all. They might arrive for a few minutes,
 hear a poem, and find something they wanted to return to.
 
-The selection remains personal. These are poems I love, presented through my
-own reading of them. AI gives me a way to work with voice and visuals; I still
-have to decide what suits the poem and whether the result feels right.
+The selection remains personal. These are poems I love, narrated by an AI
+voice whose delivery I guide. I shape the visuals around how I experience
+each poem, and decide whether the result feels right.
 
 {% include youtube.html id="PHaAHlsnLDc" title="Annabel Lee by Edgar Allan Poe" caption="Annabel Lee — Edgar Allan Poe" %}
 
@@ -57,7 +57,7 @@ process is straightforward:
 1. **Choose and prepare the poem.** I start with a poem I want in my collection,
    keeping its wording, line breaks, and stanza structure intact, along with
    its title and author.
-2. **Shape the reading.** I choose a voice and direct the delivery to suit the
+2. **Shape the reading.** I choose an AI voice and direct the delivery to suit the
    poem. The pace, pauses, and expression matter: the same words can feel very
    different depending on how they are spoken.
 3. **Give it a visual treatment.** I choose colours, atmosphere, and movement
