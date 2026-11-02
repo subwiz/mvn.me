@@ -3,6 +3,8 @@ title: 'Making a Venu Movie: A Father–Daughter Collaboration'
 description: 'How everyday stories with my daughter Venba travel through a green notebook, a drawing book, and Atelier to become Venu movies.'
 date: 2026-11-02
 tags: [Venu, Atelier, Storytelling]
+cover: /writings/making-a-venu-movie/assets/cover-v2.png
+cover_alt: "A collage of our green Story Notebook, pencil storyboard sketches, and animated movie frames from Atelier."
 published: true
 ---
 
