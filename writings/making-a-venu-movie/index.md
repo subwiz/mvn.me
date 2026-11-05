@@ -72,7 +72,24 @@ The two books serve different purposes. The green notebook holds the stories we 
 
 <p class="metadata">Select a photo to view it full size.</p>
 
-## 4. Movie Making with Atelier
+## 4. Props
+
+Venba's craft projects find their way into the movies too. Something she makes with her hands can become a prop in Venu's world, giving it a place in the stories we tell together.
+
+One example is this castle, made from cardboard toilet roll tubes. The tubes became towers, with green roofs and colourful bands around the tops. We introduced her creation as the castle in our [Oz movie](https://www.youtube.com/watch?v=p6l61fLev3Y).
+
+{% include youtube.html id="p6l61fLev3Y" title="Venu — Oz movie" caption="The Oz movie, featuring the castle inspired by Venba’s craft." %}
+
+<figure>
+  <a href="./assets/venba-cardboard-castle.jpg" aria-label="View full-size photo of Venba's cardboard castle">
+    <img src="./assets/venba-cardboard-castle.jpg" alt="Venba's handmade castle, with teal cardboard tube towers, glittery green cone roofs, and patterned bands on a teal base." width="3121" height="2891" loading="lazy" decoding="async">
+  </a>
+  <figcaption>Venba's castle, made from cardboard toilet roll tubes, became the castle in the Oz movie.</figcaption>
+</figure>
+
+I like that her contribution can travel this way: from a craft project at home to something we can recognise on screen. Alongside the stories and drawings, these handmade objects give us another way to shape the movies together.
+
+## 5. Movie Making with Atelier
 
 With the story and storyboard as my starting point, I use [Atelier](https://www.wiztools.org/atelier/) to make the movie.
 
@@ -89,4 +106,4 @@ Once those pieces are ready, I move to Final Cut Pro (FCP) for the final edit. A
 
 The story and drawings give this stage its direction. There is already an idea to express and a sequence of scenes to work from. The creative decisions we made together on paper carry into the work I do in Atelier.
 
-That journey—from a conversation with Venba, to the green notebook, to the Scene Drawboard, and finally to a movie—is what I want to share alongside [Venu's adventures](https://www.youtube.com/@TheFantasticAdventuresOfVenu). Each finished movie has a father–daughter story behind its making.
+That journey—from a conversation with Venba, to the green notebook, to the Scene Drawboard, with handmade props along the way, and finally to a movie—is what I want to share alongside [Venu's adventures](https://www.youtube.com/@TheFantasticAdventuresOfVenu). Each finished movie has a father–daughter story behind its making.
